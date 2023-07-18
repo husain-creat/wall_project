@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="nav-container">
+        <h2>CODING DOJO WALL</h2>
+        <div>
+            <p>welcome</p>
+            <a href="#">log-out</a>
+        </div>
+    </nav>
+    <hr>
+    
+    <div class="form1_container">
+        <h2>post a messeage</h2>
+        <form action="{% url% 'message_comment'}" method="post">
+            <textarea name="message-user"  cols="100" rows="10"></textarea>
+            <div>
+                <input type="submit" value="post a message"/>
+            </div>
+        </form>
+    </div>
+    <!--put the messeges-->
+    <div class="form1_container">
+        
+        <form action="{% url% 'comment'}" method="post">
+            <textarea name="comment-user"  cols="100" rows="10"></textarea>
+            <div>
+                <input type="submit" value="comment"/>
+            </div>
+        </form>
+    </div>
+    
+</body>
+</html>
